@@ -1,0 +1,5 @@
+<h4>Edit Character</h4>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.character_path(@conn, :update, @character)) %>
+
+<span><%= link "Back", to: Routes.character_path(@conn, :index), class: "waves-effect waves-light btn" %></span>

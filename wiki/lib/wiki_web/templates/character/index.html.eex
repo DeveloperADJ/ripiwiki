@@ -1,0 +1,23 @@
+<h3 class="center">Characters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for character <- @characters do %>
+    <tr>
+      <td>
+        <%= link character.name, to: Routes.character_path(@conn, :show, character) %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<!-- <span><%= link "New Character", to: Routes.character_path(@conn, :new), class: "waves-effect waves-light btn" %></span> -->
+<div class="container center">
+  <a class="btn-floating btn-large waves-effect waves-light red" href="/characters/new"><i class="material-icons">add</i></a>
+</div>

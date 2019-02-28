@@ -1,0 +1,13 @@
+<nav>
+  <div class="nav-wrapper blue" style="padding-left: 30px">
+    <a href="#" class="brand-logo left">Our Wiki</a>
+    <ul id="nav-mobile" class="right">
+      <li>
+        <%= link "Characters", to: WikiWeb.Router.Helpers.character_path(@conn, :index), class: "topic" %>
+      </li>
+      <li>
+        <%= link "Locations", to: WikiWeb.Router.Helpers.character_path(@conn, :index), class: "topic" %>
+      </li>
+    </ul>
+  </div>
+</nav>

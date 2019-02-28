@@ -1,0 +1,78 @@
+<div class="center mb20">
+  <h4>Character Info</h4>
+</div>
+
+<div class="row">
+  <div class="col s8">
+    <div class="row">
+      <div class="col s12">
+        <img class="materialboxed" src="<%= @character.image_web_url %>"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <%= @character.content %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s4 center">
+    <ul>
+      <li>
+        <strong>Name:</strong>
+        <div>
+          <%= @character.name %>
+        </div>
+      </li>
+
+      <li>
+        <strong>Age:</strong>
+        <div>
+          <%= @character.age %>
+        </div>
+      </li>
+
+      <li>
+        <strong>Born:</strong>
+        <div>
+          <%= @character.born %>
+        </div>
+      </li>
+
+      <li>
+        <strong>Died:</strong>
+        <div>
+          <%= @character.died %>
+        </div>
+      </li>
+
+      <li>
+        <strong>Characteristics:</strong>
+        <div class="">
+          <%= @character.characteristics %>
+        </div>
+      </li>
+
+      <li>
+        <strong>Backstory:</strong>
+        <div class="">
+          <%= @character.backstory %>
+        </div>
+      </li>
+
+      <li>
+        <strong>Abilities:</strong>
+        <div class="">
+          <%= @character.abilities %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <%= link "Edit", to: Routes.character_path(@conn, :edit, @character), class: "col s3 waves-effect waves-light btn" %>
+  <%= link "Back", to: Routes.character_path(@conn, :index), class: "col s3 waves-effect waves-light btn" %>
+  <%= link "Delete", to: Routes.character_path(@conn, :delete, @character), method: :delete, data: [confirm: "Are you sure?"], class: "col s3 waves-effect waves-light btn red" %>
+</div>
