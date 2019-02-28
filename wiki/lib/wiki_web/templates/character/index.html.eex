@@ -10,7 +10,10 @@
 <%= for character <- @characters do %>
     <tr>
       <td>
-        <%= link character.name, to: Routes.character_path(@conn, :show, character) %>
+        <div class="row">
+          <img class="materialboxed thumbnail-small mr-20" src="<%= character.image_web_url %>"/>
+          <%= link character.name, to: Routes.character_path(@conn, :show, character) %>
+        </div>
       </td>
     </tr>
 <% end %>
