@@ -6,7 +6,7 @@
         <%= link "Characters", to: WikiWeb.Router.Helpers.character_path(@conn, :index), class: "topic" %>
       </li>
       <li>
-        <%= link "Locations", to: WikiWeb.Router.Helpers.character_path(@conn, :index), class: "topic" %>
+        <%= link "Locations", to: WikiWeb.Router.Helpers.location_path(@conn, :index), class: "topic" %>
       </li>
     </ul>
   </div>

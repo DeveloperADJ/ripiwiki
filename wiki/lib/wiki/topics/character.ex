@@ -21,6 +21,6 @@ defmodule Wiki.Topics.Character do
   def changeset(character, attrs) do
     character
     |> cast(attrs, [:name, :age, :content, :born, :died, :characteristics, :backstory, :abilities, :image_web_url])
-    |> validate_required([:name, :age, :content, :born, :died, :characteristics, :backstory, :abilities, :image_web_url])
+    |> validate_required([:name, :content])
   end
 end

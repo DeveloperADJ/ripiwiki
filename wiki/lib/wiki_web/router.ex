@@ -20,6 +20,7 @@ defmodule WikiWeb.Router do
 
     resources "/users", UserController
     resources "/characters", CharacterController
+    resources "/locations", LocationController
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,10 @@
+<%= for item <- @collection do %>
+    <tr>
+      <td>
+        <div class="row">
+          <img class="materialboxed thumbnail-small mr-20" src="<%= character.image_web_url %>"/>
+          <%= link item.name, to: @show_path %>
+        </div>
+      </td>
+    </tr>
+<% end %>

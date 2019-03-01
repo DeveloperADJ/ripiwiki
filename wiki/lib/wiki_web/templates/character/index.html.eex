@@ -1,5 +1,4 @@
 <h3 class="center">Characters</h3>
-
 <table>
   <thead>
     <tr>
@@ -11,7 +10,7 @@
     <tr>
       <td>
         <div class="row">
-          <img class="materialboxed thumbnail-small mr-20" src="<%= character.image_web_url %>"/>
+          <img class="materialboxed thumbnail-small mr-20" src="<%= if character.image_web_url, do: character.image_web_url, else: "https://www.vrc.crim.cam.ac.uk/VRCconferences/conference/cplenaries/pelnspeakers/person-placeholder.jpg/image" %>"/>
           <%= link character.name, to: Routes.character_path(@conn, :show, character) %>
         </div>
       </td>

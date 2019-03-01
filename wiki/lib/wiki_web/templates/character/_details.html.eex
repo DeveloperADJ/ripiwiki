@@ -1,0 +1,55 @@
+<ul>
+  <%= if @character.name do %>
+    <li>
+      <strong>Name:</strong>
+      <div>
+        <%= @character.name %>
+      </div>
+    </li>
+  <% end %>
+
+  <%= if @character.age do %>
+    <li>
+      <strong>Age:</strong>
+      <div>
+        <%= @character.age %>
+      </div>
+    </li>
+  <% end %>
+
+  <%= if @character.born do %>
+    <li>
+      <strong>Born:</strong>
+      <div>
+        <%= @character.born %>
+      </div>
+    </li>
+  <% end %>
+
+<%= if @character.died do %>
+  <li>
+    <strong>Died:</strong>
+    <div>
+      <%= @character.died %>
+    </div>
+  </li>
+<% end %>
+
+<%= if @character.characteristics do %>
+  <li>
+    <strong>Characteristics:</strong>
+    <div class="">
+      <%= @character.characteristics %>
+    </div>
+  </li>
+<% end %>
+
+<%= if @character.abilities do %>
+  <li>
+    <strong>Abilities:</strong>
+    <div class="">
+      <%= @character.abilities %>
+    </div>
+  </li>
+<% end %>
+</ul>
