@@ -1,3 +1,4 @@
-<%= link "Edit", to: Routes.character_path(@conn, :edit, @character), class: "col s3 waves-effect waves-light btn" %>
-<%= link "Back", to: Routes.character_path(@conn, :index), class: "col s3 waves-effect waves-light btn" %>
-<%= link "Delete", to: Routes.character_path(@conn, :delete, @character), method: :delete, data: [confirm: "Are you sure?"], class: "col s3 waves-effect waves-light btn red" %>
+<div class="flex justify-around">
+  <%= link "Edit", to: Routes.character_path(@conn, :edit, @character), class: "waves-effect waves-light btn mr-20" %>
+  <%= link "Back", to: Routes.character_path(@conn, :index), class: "waves-effect waves-light btn" %>
+</div>

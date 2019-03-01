@@ -149,6 +149,10 @@ header nav a {
   justify-content: flex-end;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .thumbnail-small {
   height: 50px;
   object-fit: cover;

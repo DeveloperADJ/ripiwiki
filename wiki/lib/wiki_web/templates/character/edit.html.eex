@@ -2,4 +2,6 @@
 
 <%= render "form.html", Map.put(assigns, :action, Routes.character_path(@conn, :update, @character)) %>
 
-<span><%= link "Back", to: Routes.character_path(@conn, :index), class: "waves-effect waves-light btn" %></span>
+<div class="left">
+  <%= link "Delete Entry", to: Routes.character_path(@conn, :delete, @character), method: :delete, data: [confirm: "Are you sure?"], class: "waves-effect waves-light btn red" %>
+</div>
